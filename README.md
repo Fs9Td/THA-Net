@@ -78,5 +78,5 @@ Small numerical variation may occur with different GPUs, CUDA versions, or spars
 
 ## Acknowledgements
 
-We thank the authors of [EV-UAV](https://github.com/ChenYichen9527/Ev-UAV) for open-sourcing their code, which provides a valuable foundation for this work.
+We thank the authors of [EV-SpSegNet](https://github.com/ChenYichen9527/Ev-UAV) for open-sourcing their code, which provides a valuable foundation for this work.
 
