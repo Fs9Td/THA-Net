@@ -69,6 +69,7 @@ CUDA_VISIBLE_DEVICES=0 python eval_thanet.py \
 ## Results
 
 | Method   | IoU   | ACC   | Pd    | Fa (×10^-4) |
+
 |  THA-Net | 65.21 | 72.53 | 86.74 | 0.30 |
 
 
