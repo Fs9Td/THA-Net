@@ -1,0 +1,8 @@
+# Tested with Python 3.8.20 on Linux.
+--extra-index-url https://download.pytorch.org/whl/cu111
+torch==1.9.1+cu111
+numpy==1.24.1
+scipy==1.10.1
+PyYAML==6.0.2
+# CUDA wheel; install a wheel compatible with your PyTorch/CUDA stack if needed.
+spconv-cu113==2.3.6

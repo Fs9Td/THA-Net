@@ -1,0 +1,50 @@
+seed: 37
+
+data:
+  root: datasets/EV-UAV
+  window_ms: 8000
+  resolution: [346, 260]
+  max_events: 500000
+  voxel_size: [1, 1, 1]
+
+model:
+  input_channels: 4
+  base_channels: 12
+  motion_hypotheses: 4
+  trace_offsets: [-4, -2, 0, 2, 4]
+  max_motion: 2.0
+  temporal_penalty: 0.05
+  persistence_exponent: 1.5
+  persistence_hidden: 64
+  # 最终模型在 logit 空间融合逐事件对应的 PGTD 高层概率；不是输出概率后处理。
+  pgtd_output_weight: 0.0
+  pgtd_logit_weight: 0.50
+  # 最终严禁使用统一 logit 偏置，保持原始模型概率。
+  output_logit_bias: 0.0
+
+loss:
+  focal_alpha: 0.75
+  focal_gamma: 2.0
+  dice_weight: 0.5
+  motion_weight: 0.05
+  persistence_weight: 0.1
+  pgtd_probability_weight: 0.1
+  persistence_activity_threshold: 0.25
+  motion_pair_time: 256
+  motion_pair_radius: 16
+
+train:
+  epochs: 8
+  batch_size: 1
+  workers: 4
+  optimizer: adamw
+  learning_rate: 0.00002
+  weight_decay: 0.0001
+  grad_clip: 10.0
+  amp: true
+  output_dir: outputs/tha_raw09_logit05
+
+evaluation:
+  threshold: 0.90
+  slice_ms: 50
+  coverage_threshold: 0.0001
