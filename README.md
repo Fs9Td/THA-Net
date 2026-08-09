@@ -76,3 +76,7 @@ CUDA_VISIBLE_DEVICES=0 python eval_thanet.py \
 Small numerical variation may occur with different GPUs, CUDA versions, or sparse-convolution builds.
 
 
+## Acknowledgements
+
+We thank the authors of [EV-UAV](https://github.com/ChenYichen9527/Ev-UAV) for open-sourcing their code, which provides a valuable foundation for this work.
+
