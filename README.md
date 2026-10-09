@@ -1,4 +1,4 @@
-# THA-Net: Motion-Aligned Sparse Trace Recovery with Persistence-Gated Decoding for Long-Window Event Stream Segmentation
+# THA-Net: Motion-Aligned Sparse Trace Recovery with Persistence-Gated Decoding for Long-Window Event Stream Segmentation（TCSVT 2026）
 
 
 ## Requirements
