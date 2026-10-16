@@ -80,3 +80,20 @@ Small numerical variation may occur with different GPUs, CUDA versions, or spars
 
 We thank the authors of [EV-SpSegNet](https://github.com/ChenYichen9527/Ev-UAV) for open-sourcing their code, which provides a valuable foundation for this work.
 
+
+## Citation
+
+If you find our work useful in your research, please consider citing our paper:
+
+```bibtex
+@ARTICLE{11737647,
+  author={Zhang, Mingjin and Fan, Shuaipeng and Guo, Jie and Li, Yunsong},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  title={THA-Net: Motion-Aligned Sparse Trace Recovery with Persistence-Gated Decoding for Long-Window Event Stream Segmentation},
+  year={2026},
+  doi={10.1109/TCSVT.2026.3743401}
+}
+```
+
+
+
