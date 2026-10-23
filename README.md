@@ -95,5 +95,8 @@ If you find our work useful in your research, please consider citing our paper:
 }
 ```
 
+## Related Projects
+
+- [RidgeField-Net](https://github.com/Fs9Td/RidgeField-Net): Continuous Spatio-Temporal Tube Fields for Tiny UAV Detection in Event Streams (ACM MM 2026).
 
 
